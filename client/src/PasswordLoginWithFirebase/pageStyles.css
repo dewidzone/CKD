@@ -1,0 +1,171 @@
+/*Home*/
+.home-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #aab6eb; /* Light background color */
+}
+ 
+.home-content {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.vision-mission {
+    background-color: #ffffff; /* Container background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Box shadow for container */
+    max-width: 1000px; /* Maximum width for responsiveness */
+    height: 430px;
+    opacity: 0;
+    animation: slideUp 1s ease forwards;
+}
+
+.vision-mission h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.vision-mission p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.sign-out-btn {
+    margin-right: auto; /* Pushes the button to the left */
+  }
+/* Additional styling for responsiveness */
+@media screen and (max-width: 600px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .vision-mission {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .vision-mission h2 {
+        font-size: 1.5rem;
+    }
+
+    .vision-mission p {
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*TreatmentOption*/
+.treatment-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+
+}
+
+.topic {
+    margin-bottom: 30px;
+}
+
+.topic h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.subtopic {
+    margin-bottom: 20px;
+}
+
+.subtopic h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeInSubtopic 0.5s ease forwards;
+}
+
+.subtopic p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInSubtopic 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSubtopic {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtopic:nth-child(2) h3,
+.subtopic:nth-child(2) p {
+    animation-delay: 0.2s;
+}
+
+.subtopic:nth-child(3) h3,
+.subtopic:nth-child(3) p {
+    animation-delay: 0.4s;
+}
+
+
+
+
+
+

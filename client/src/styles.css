@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    
+    }
+    
+    body{
+        margin: 0;
+    }
+    
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 10px;
+        }
+    }
+    
+    
+    .nav {
+        background-color: rgb(59, 59, 189);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2rem;
+        padding: 0 2rem; /* Adjust padding to increase width */
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 100%; /* Set the width to 100% */
+        position: sticky;
+        top: 0; /* Stick to the top of the viewport */
+        z-index: 1000; /* Ensure the nav bar is above other content */
+    }
+    
+    .site-title {
+        font-size: 2rem;
+    }
+    
+    .nav ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .nav a{
+        color: inherit;
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: .25rem;
+    
+    }
+    
+    
+    
+    .nav li:hover {
+        background-color: #5e7bfc;
+        
+    }
+    
+    
+    

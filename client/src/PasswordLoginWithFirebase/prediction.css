@@ -1,0 +1,207 @@
+.sign-out-btn {
+  margin-right: auto;
+}
+
+
+.navbar-fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 450px); /* Adjust the width as needed */
+  z-index: 999; /* Ensure the navbar stays on top of other content */
+}
+
+
+
+
+.prediction-container {
+  background-color: #9dbbf3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center; /* Center-align text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+ 
+}
+
+.bullet-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left; /* Align text to the left */
+}
+
+.bullet-item {
+  margin-bottom: 10px;
+}
+
+
+.form-label {
+  font-weight: bold;
+ 
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+.sign-out-btn {
+  margin-right: auto; /* Pushes the button to the left */
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 5px; /* Add margin to create space between buttons */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease;
+}
+
+/* CSS for Animated Bullets */
+.bullet-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.bullet-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.bullet-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px; /* Increased width */
+  height: 12px; /* Increased height */
+  border-radius: 50%;
+  background-color: #bd2dda; /* Change color as needed */
+  animation: bulletAnimation 1s infinite alternate; /* Adjust animation duration as needed */
+}
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff; /* Add a bottom border to the result label */
+  max-width: 100%; /* Ensure the result stays within the container */
+  overflow-wrap: break-word; /* Wrap long text to the next line */
+}
+
+
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.form-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-input {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-button {
+  margin-right: 8px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.form-button-secondary {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #495057;
+  }
+}
+
+/* Result */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  position: relative; /* Required for pseudo-element */
+}
+
+
+

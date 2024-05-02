@@ -1,0 +1,46 @@
+/* AboutUs.css */
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .about-section {
+    background-color: #f2f2f2; /* Light gray background */
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 10px; /* Add margin between sections */
+    max-width: 100%; /* Optionally limit the maximum width */
+    animation: fadeIn 2s ease forwards; /* Add animation */
+  }
+  
+  .about-section h2 {
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+  }
+  
+  .about-section p {
+    color: #666; /* Medium gray text color */
+  }
+  
+  .about-section:last-child {
+    margin-bottom: 0; /* Remove margin from the last section */
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Move up slightly */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
